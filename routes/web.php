@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController; //<---- Import del controller precedentemente creato!
 use App\Http\Controllers\Admin\ProjectController;
 use App\Models\Project;
-
+use App\Http\Controllers\TypeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -36,3 +36,6 @@ Route::middleware(['auth'])
     });
 
 require __DIR__ . '/auth.php';
+
+
+Route::resource('types', TypeController::class);

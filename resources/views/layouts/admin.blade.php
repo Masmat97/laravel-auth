@@ -67,7 +67,12 @@
                                 </form>
                             </li>
 
-
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="{{ route('types.index') }}">
+                                <i class="fa-solid fa-plus  fa-lg fa-fw"></i> Type
+                            </a>
+                        </li>
 
                         </ul>
 
